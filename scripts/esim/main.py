@@ -33,15 +33,15 @@ flags = tf.flags
 FLAGS = flags.FLAGS
 
 # Required parameters
-flags.DEFINE_string("train_file", None, "The train file path.")
-flags.DEFINE_string("valid_file", None, "The validation file path.")
-flags.DEFINE_string("test_file", None, "The test file path.")
-flags.DEFINE_string("vocab_file", None, "The vocabulary file.")
-flags.DEFINE_string("output_dir", None,
+flags.DEFINE_string("train_file", '../../data/ubuntu_data_concat/train.txt', "The train file path.")
+flags.DEFINE_string("valid_file", '../../data/ubuntu_data_concat/valid.txt', "The validation file path.")
+flags.DEFINE_string("test_file", '../../data/ubuntu_data_concat/test.txt', "The test file path.")
+flags.DEFINE_string("vocab_file", '../../data/ubuntu_data_concat/vocab.txt', "The vocabulary file.")
+flags.DEFINE_string("output_dir", 'result',
                     "The output directory where the model checkpoints will be written.")
 
 # Other parameters
-flags.DEFINE_string("embedding_file", None, "The pre-trained embedding file path.")
+flags.DEFINE_string("embedding_file", '../../data/embedding_w2v_d300.txt', "The pre-trained embedding file path.")
 
 flags.DEFINE_bool("fix_embedding", True, "Whether to fix embedding during training.")
 flags.DEFINE_bool("use_cudnn", True, "Whether to cudnn version BiLSTM.")
