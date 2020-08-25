@@ -51,7 +51,7 @@ def build_dictionary(org_path, dst_path, is_lowercase=False):
     freqs = token_to_freqs.values()
 
     sorted_idx = numpy.argsort(freqs)
-    sorted_tokens = [tokens[i] for i in sorted_idx[::-1]]
+    sorted_tokens = [tokens[i] for i in list(sorted_idx)[::-1]]
 
     token_to_idx = OrderedDict()
     token_to_idx['_PAD_'] = 0  # default, padding
