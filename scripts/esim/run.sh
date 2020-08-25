@@ -2,7 +2,7 @@
 
 DATA_DIR=../../data/ubuntu_data_concat
 
-CUDA_VISIBLE_DEVICES=0 python -u main.py \
+CUDA_VISIBLE_DEVICES=3 python -u main.py \
 --train_file=$DATA_DIR/train.txt \
 --valid_file=$DATA_DIR/valid.txt \
 --test_file=$DATA_DIR/test.txt \
