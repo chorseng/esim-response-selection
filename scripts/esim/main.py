@@ -45,7 +45,7 @@ flags.DEFINE_string("output_dir", 'result',
 #flags.DEFINE_string("test_file", None, "The test file path.")
 #flags.DEFINE_string("vocab_file", None, "The vocabulary file.")
 #flags.DEFINE_string("output_dir", None,
-                    "The output directory where the model checkpoints will be written.")
+#                    "The output directory where the model checkpoints will be written.")
 
 # Other parameters
 flags.DEFINE_string("embedding_file", '../../data/embedding_w2v_d300.txt', "The pre-trained embedding file path.")
