@@ -89,7 +89,8 @@ def make_dirs(dirs):
 
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.realpath(__file__))
-    org_dir = os.path.join(base_dir, 'ubuntu_data/')
+    #org_dir = os.path.join(base_dir, 'ubuntu_data/')
+    org_dir = '/home/chorseng/IOI/data/ubuntu1/'
     dst_dir = os.path.join(base_dir, 'ubuntu_data_concat/')
     make_dirs([dst_dir])
 
